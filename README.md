@@ -186,15 +186,18 @@ Created a Dockerfile to containerize the Flask application. Built a Docker image
 Deployed the containerized Flask app to a Kubernetes cluster using Minikube.
 * Tagged and pushed the Docker image to Docker Hub:
 * Installed Kubernetes tools (kubectl and minikube) and started Minikube.
-* Created Kubernetes configuration files:
-      * `deployment.yaml` for creating pods.
-      * `service.yaml` for exposing the application.
+* Created Kubernetes configuration files: `deployment.yaml` for creating pods, `service.yaml` for exposing the application.
 * Deployment commands: `kubectl apply -f deployment.yaml` `kubectl apply -f service.yaml`
 * Accessed the app using Minikube: `minikube service price-service --url`
 
 ### Testing the Deployment
 * Browser Access: Navigated to the Minikube service URL and confirmed the welcome page is displayed.
+
+  ![Browser Screenshot](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Browser.png)
+
 * API Testing: Tested the /predict_price endpoint using curl
+
+  ![Terminal Curl Response](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Terminal%20curl%20response.png)
 
 
 
