@@ -119,6 +119,8 @@ This increased the predictor count to 34 variables due to the 4 room types and 2
 A Variable Importance plot was generated to evaluate the contribution of different variables, especially city variables, to the prediction task.
 Less influential city variables were identified and excluded.
 
+![Variable Importance Plot](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Variable%20importance%20plot.png)
+
 ## Exhaustive Search and Backward Elimination:
 
 Applied Exhaustive Search and Backward Elimination techniques to streamline the predictors and retain the most significant variables.
@@ -130,6 +132,8 @@ This resulted in a Final Model with only 5 predictor variables.
 
 **Performance:** RMSE: 140.14.
 
+![Regression Statistics](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Regression%20statistics.png)
+
 The trade-off between RMSE and model simplicity was considered, prioritizing a parsimonious model for real-world applicability.
 
 ## Performance Comparison:
@@ -140,6 +144,8 @@ Approximately 95% of residuals lie within the range of [-300, 300], showcasing r
 ## Residual Analysis:
 
 Histogram plots were generated to visualize residual distribution, confirming minimal bias in predictions.
+
+![Residuals Plot](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Residuals.png)
 
 
 
