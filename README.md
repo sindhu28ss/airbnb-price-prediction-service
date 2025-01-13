@@ -147,6 +147,56 @@ Histogram plots were generated to visualize residual distribution, confirming mi
 
 ![Residuals Plot](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Residuals.png)
 
+## **Python Scripts**
+
+- **`price_prediction.py`**: Contains the logic for data preprocessing, model training, evaluation, and saving the trained model.  
+- **`price_prediction_model.pkl`**: Serialized file of the trained model, ready for deployment.
+
+## Model Deployment:
+
+The model is deployed using Flask, serving predictions through a RESTful API.
+
+## Environment Setup and Dependency Management
+
+**Pipenv Setup:** Used pipenv for managing Python dependencies.
+
+**Installed essential libraries:** flask, pandas, scikit-learn, numpy, and scipy.
+
+Created Pipfile and Pipfile.lock to ensure reproducibility.
+
+Installed flake8 as a development dependency for code linting and gunicorn for production readiness.
+
+## Containerization with Docker
+
+Created a Dockerfile to containerize the Flask application. Built a Docker image and ran a container locally.
+
+**Key Files:**
+* Dockerfile: Contains instructions for building the Docker image.
+* requirements.txt: Lists Python dependencies for the app.
+
+### Docker Commands:
+
+**Built the Docker image:** `docker build -t price-prediction-app`
+
+**Ran the Docker container:** `docker run -p 9696:9696 price-prediction-app`
+
+**Tested the app with a curl command:** `curl "http://127.0.0.1:9696/predict_price?availability_365=100&calculated_host_listings_count=2&minimum_nights=3&number_of_reviews=10&room_type_Private%20room=1"`
+
+## Deployment on Kubernetes
+Deployed the containerized Flask app to a Kubernetes cluster using Minikube.
+* Tagged and pushed the Docker image to Docker Hub:
+* Installed Kubernetes tools (kubectl and minikube) and started Minikube.
+* Created Kubernetes configuration files:
+      * `deployment.yaml` for creating pods.
+      * `service.yaml` for exposing the application.
+* Deployment commands: `kubectl apply -f deployment.yaml` `kubectl apply -f service.yaml`
+* Accessed the app using Minikube: `minikube service price-service --url`
+
+### Testing the Deployment
+* Browser Access: Navigated to the Minikube service URL and confirmed the welcome page is displayed.
+* API Testing: Tested the /predict_price endpoint using curl
+
+
 
 
 
