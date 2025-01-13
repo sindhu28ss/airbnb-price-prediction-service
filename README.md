@@ -100,7 +100,46 @@ The correlation heatmap below illustrates the relationships between price and ot
 
 ![Correlation Heatmap: Price vs Numerical Variables](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Correlation%20Heat%20Map.png)
 
+## Model Training:
+In this phase, I focused on building predictive models by utilizing relevant features from the dataset, performing feature engineering, evaluating variable importance, and optimizing the model to ensure effective and interpretable predictions for Airbnb listing prices.
 
+Categorical variables such as room_type and city were converted into dummy variables to enable their inclusion in the regression model.
+This increased the predictor count to 34 variables due to the 4 room types and 27 cities. Partitioned the data into training and validation sets and trained a Multiple Linear Regression model.
+
+### Base Model:
+
+**Predictors in the Base Model:** minimum_nights, number_of_reviews, calculated_host_listings_count, availability_365, number_of_reviews_ltm, and dummy variables for room_type and city.
+
+**Outcome Variable:** price.
+
+**Performance:** Root Mean Squared Error (RMSE): 137.07.
+
+## Variable Importance Analysis:
+
+A Variable Importance plot was generated to evaluate the contribution of different variables, especially city variables, to the prediction task.
+Less influential city variables were identified and excluded.
+
+## Exhaustive Search and Backward Elimination:
+
+Applied Exhaustive Search and Backward Elimination techniques to streamline the predictors and retain the most significant variables.
+This resulted in a Final Model with only 5 predictor variables.
+
+## Final Model:
+
+**Predictors:** availability_365, calculated_host_listings_count, minimum_nights, number_of_reviews, room_type_Private room.
+
+**Performance:** RMSE: 140.14.
+
+The trade-off between RMSE and model simplicity was considered, prioritizing a parsimonious model for real-world applicability.
+
+## Performance Comparison:
+
+The final model reduced the number of predictors from 34 to 5, resulting in a slight increase in RMSE from 137.07 to 140.14.
+Approximately 95% of residuals lie within the range of [-300, 300], showcasing reasonable accuracy.
+
+## Residual Analysis:
+
+Histogram plots were generated to visualize residual distribution, confirming minimal bias in predictions.
 
 
 
