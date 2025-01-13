@@ -59,6 +59,8 @@ The cleaned dataset was analyzed to derive insights into pricing trends and othe
 
 ### 1. Average Price Across Each City:
 Geographic location significantly influences pricing. Cities like Santa Cruz County and Rhode Island have the highest average prices, while Columbus and Salem have the lowest.
+[Average price across each city](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Average%20price%20across%20each%20city.png)
+
 
 ### 2. Number of Listings in Each City:
 Listing density varies widely and impacts pricing competition. New York and Los Angeles have the highest number of Airbnb listings, while smaller cities have fewer listings.
