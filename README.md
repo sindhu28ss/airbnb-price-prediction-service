@@ -59,22 +59,49 @@ The cleaned dataset was analyzed to derive insights into pricing trends and othe
 
 ### 1. Average Price Across Each City:
 Geographic location significantly influences pricing. Cities like Santa Cruz County and Rhode Island have the highest average prices, while Columbus and Salem have the lowest.
-[Average price across each city](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Average%20price%20across%20each%20city.png)
+
+![Average price across each city](Images/Average%20price%20across%20each%20city.png)
 
 
 ### 2. Number of Listings in Each City:
 Listing density varies widely and impacts pricing competition. New York and Los Angeles have the highest number of Airbnb listings, while smaller cities have fewer listings.
 
+![Number of Listings in Each City](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Number%20of%20Listings%20in%20each%20city.png)
+
+
 ### 3. Distribution of Listing Availability Across Cities:
 Availability impacts demand and consequently pricing. Listings in NY and Austin are frequently reserved, while those in Rhode Island and Pacific Grove have lower availability.
+
+![Distribution of Listings Availability Across Cities](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Distribution%20of%20listings%20availability%20across%20cities.png)
+
 
 ### 4. Relationship Between Price and Number of Reviews:
 Higher prices often lead to lower engagement. Listings priced below $200 receive more reviews, while higher-priced listings receive fewer reviews.
 
+![Price vs Reviews](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Prics%20vs%20Reviews.png)
+
+
 ### 5. Room Type Distribution Across Cities:
 Room type plays a key role in pricing variations. Entire homes dominate the market, followed by private rooms. Hotel rooms have the highest median prices.
 
+![Room type distribution across cities](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Romm%20type%20distribution%20across%20cities.png)
+
+
 ### 6. Locations of Cities on the Map:
 Geographic clustering indicates areas of high demand. Listings are concentrated in metropolitan areas and tourist-heavy locations.
+
+![Locations of the cities on the map](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/map.png)
+
+
+### Correlation Matrix
+The correlation heatmap below illustrates the relationships between price and other numerical variables in the dataset. The heatmap highlights that:
+- `number_of_reviews_ltm` and `number_of_reviews` have a moderate positive correlation.
+- `price` has weak correlations with all the numerical variables.
+
+![Correlation Heatmap: Price vs Numerical Variables](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Correlation%20Heat%20Map.png)
+
+
+
+
 
 
