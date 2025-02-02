@@ -176,11 +176,11 @@ Created a Dockerfile to containerize the Flask application. Built a Docker image
 
 ### Docker Commands:
 
-**Built the Docker image:** `docker build -t price-prediction-app`
+**Build the Docker image:** `docker build -t price-prediction-app`
 
-**Ran the Docker container:** `docker run -p 9696:9696 price-prediction-app`
+**Run the Docker container:** `docker run -p 9696:9696 price-prediction-app`
 
-**Tested the app with a curl command:** `curl "http://127.0.0.1:9696/predict_price?availability_365=100&calculated_host_listings_count=2&minimum_nights=3&number_of_reviews=10&room_type_Private%20room=1"`
+**Test the app with a curl command:** `curl "http://127.0.0.1:9696/predict_price?availability_365=100&calculated_host_listings_count=2&minimum_nights=3&number_of_reviews=10&room_type_Private%20room=1"`
 
 ## Deployment on Kubernetes
 Deployed the containerized Flask app to a Kubernetes cluster using Minikube.
@@ -191,11 +191,11 @@ Deployed the containerized Flask app to a Kubernetes cluster using Minikube.
 * Accessed the app using Minikube: `minikube service price-service --url`
 
 ### Testing the Deployment
-* Browser Access: Navigated to the Minikube service URL and confirmed the welcome page is displayed.
+* Browser Access: Navigate to the Minikube service URL and confirm the welcome page is displayed.
 
   ![Browser Screenshot](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Browser.png)
 
-* API Testing: Tested the /predict_price endpoint using curl
+* API Testing: Test the /predict_price endpoint using curl
 
   ![Terminal Curl Response](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Terminal%20curl%20response.png)
 
