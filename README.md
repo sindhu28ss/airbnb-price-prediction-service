@@ -1,4 +1,7 @@
 # Airbnb-Price-Prediction
+<p align="center">
+  <img src="https://github.com/sindhu28ss/Rental-Offerings-Optimization/blob/main/Airbnb-logo.png" width="250">
+</p>
 ## Background:
 Airbnb is a platform that connects travelers with hosts offering accommodations for various needs such as tourism, work trips, weekend getaways, family vacations, or longer stays. Founded in 2008 by two designers, Airbnb has become a globally recognized brand, providing unique travel experiences.
 The platform generates revenue by charging fees to both guests and hosts. To remain competitive, Airbnb must continually optimize its pricing strategies. Given the rising demand and supply, predicting pricing factors, user preferences, and market trends becomes increasingly challenging.
@@ -59,46 +62,46 @@ The cleaned dataset was analyzed to derive insights into pricing trends and othe
 
 ### 1. Average Price Across Each City:
 Geographic location significantly influences pricing. Cities like Santa Cruz County and Rhode Island have the highest average prices, while Columbus and Salem have the lowest.
-
-![Average price across each city](Images/Average%20price%20across%20each%20city.png)
-
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Average%20price%20across%20each%20city.png" width="500">
+</p>
 
 ### 2. Number of Listings in Each City:
 Listing density varies widely and impacts pricing competition. New York and Los Angeles have the highest number of Airbnb listings, while smaller cities have fewer listings.
 
-![Number of Listings in Each City](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Number%20of%20Listings%20in%20each%20city.png)
-
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Number%20of%20Listings%20in%20each%20city.png" width="500">
+</p>
 
 ### 3. Distribution of Listing Availability Across Cities:
 Availability impacts demand and consequently pricing. Listings in NY and Austin are frequently reserved, while those in Rhode Island and Pacific Grove have lower availability.
 
-![Distribution of Listings Availability Across Cities](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Distribution%20of%20listings%20availability%20across%20cities.png)
-
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Distribution%20of%20listings%20availability%20across%20cities.png" width="500">
+</p>
 
 ### 4. Relationship Between Price and Number of Reviews:
 Higher prices often lead to lower engagement. Listings priced below $200 receive more reviews, while higher-priced listings receive fewer reviews.
 
-![Price vs Reviews](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Prics%20vs%20Reviews.png)
-
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Prics%20vs%20Reviews.png" width="500">
+</p>
 
 ### 5. Room Type Distribution Across Cities:
 Room type plays a key role in pricing variations. Entire homes dominate the market, followed by private rooms. Hotel rooms have the highest median prices.
 
-![Room type distribution across cities](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Romm%20type%20distribution%20across%20cities.png)
-
-
-### 6. Locations of Cities on the Map:
-Geographic clustering indicates areas of high demand. Listings are concentrated in metropolitan areas and tourist-heavy locations.
-
-![Locations of the cities on the map](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/map.png)
-
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Romm%20type%20distribution%20across%20cities.png" width="500">
+</p>
 
 ### Correlation Matrix
 The correlation heatmap below illustrates the relationships between price and other numerical variables in the dataset. The heatmap highlights that:
 - `number_of_reviews_ltm` and `number_of_reviews` have a moderate positive correlation.
 - `price` has weak correlations with all the numerical variables.
 
-![Correlation Heatmap: Price vs Numerical Variables](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Correlation%20Heat%20Map.png)
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Correlation%20Heat%20Map.png" width="500">
+</p>
 
 ## Model Training:
 In this phase, I focused on building predictive models by utilizing relevant features from the dataset, performing feature engineering, evaluating variable importance, and optimizing the model to ensure effective and interpretable predictions for Airbnb listing prices.
@@ -119,8 +122,9 @@ This increased the predictor count to 34 variables due to the 4 room types and 2
 A Variable Importance plot was generated to evaluate the contribution of different variables, especially city variables, to the prediction task.
 Less influential city variables were identified and excluded.
 
-![Variable Importance Plot](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Variable%20importance%20plot.png)
-
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Variable%20importance%20plot.png" width="500">
+</p>
 ## Exhaustive Search and Backward Elimination:
 
 Applied Exhaustive Search and Backward Elimination techniques to streamline the predictors and retain the most significant variables.
@@ -145,7 +149,9 @@ Approximately 95% of residuals lie within the range of [-300, 300], showcasing r
 
 Histogram plots were generated to visualize residual distribution, confirming minimal bias in predictions.
 
-![Residuals Plot](https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Residuals.png)
+<p align="left">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Residuals.png" width="500">
+</p>
 
 ## **Python Scripts**
 
