@@ -60,38 +60,25 @@ The raw dataset contained missing values, irrelevant attributes, and outliers. T
 ## Exploratory Data Analysis (EDA)
 The cleaned dataset was analyzed to derive insights into pricing trends and other features. Below are the key findings:
 
-### 1. Average Price Across Each City:
+### Average Price Across Each City:
 Geographic location significantly influences pricing. Cities like Santa Cruz County and Rhode Island have the highest average prices, while Columbus and Salem have the lowest.
 <p align="left">
-  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Average%20price%20across%20each%20city.png" width="500">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Average%20price%20across%20each%20city.png" width="1000">
 </p>
 
-### 2. Number of Listings in Each City:
-Listing density varies widely and impacts pricing competition. New York and Los Angeles have the highest number of Airbnb listings, while smaller cities have fewer listings.
 
-<p align="left">
-  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Number%20of%20Listings%20in%20each%20city.png" width="500">
-</p>
-
-### 3. Distribution of Listing Availability Across Cities:
+### Distribution of Listing Availability Across Cities:
 Availability impacts demand and consequently pricing. Listings in NY and Austin are frequently reserved, while those in Rhode Island and Pacific Grove have lower availability.
 
 <p align="left">
-  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Distribution%20of%20listings%20availability%20across%20cities.png" width="500">
+  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Distribution%20of%20listings%20availability%20across%20cities.png" width="1000">
 </p>
 
-### 4. Relationship Between Price and Number of Reviews:
+### Relationship Between Price and Number of Reviews:
 Higher prices often lead to lower engagement. Listings priced below $200 receive more reviews, while higher-priced listings receive fewer reviews.
 
 <p align="left">
   <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Prics%20vs%20Reviews.png" width="500">
-</p>
-
-### 5. Room Type Distribution Across Cities:
-Room type plays a key role in pricing variations. Entire homes dominate the market, followed by private rooms. Hotel rooms have the highest median prices.
-
-<p align="left">
-  <img src="https://github.com/sindhu28ss/airbnb-price-prediction-service/blob/main/Images/Romm%20type%20distribution%20across%20cities.png" width="500">
 </p>
 
 ### Correlation Matrix
